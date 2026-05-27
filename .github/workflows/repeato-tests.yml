@@ -1,7 +1,5 @@
 name: Integration with REPEATO CLI
-
 on: [push, workflow_dispatch]
-
 permissions:
   contents: write
 
@@ -9,13 +7,13 @@ jobs:
   repeato-cli:
     name: Build and run repeato tests using Repeato CLI
     runs-on: ubuntu-latest
-
     steps:
       # Configure Node.js. Version 20 required by @repeato/cli-testrunner >= 1.9 (sharp dependency)
       - uses: actions/setup-node@v4
         with:
           node-version: '20'
 
+      # Validate Repeato access token
       - name: Validate Repeato access token
         env:
           REPEATO_ACCESS_TOKEN: ${{ secrets.REPEATO_ACCESS_TOKEN }}
@@ -28,40 +26,13 @@ jobs:
       # Check out the app source code
       - uses: actions/checkout@v4
 
-      # Check out the Repeato test workspace. Your tests could also live in the same repository as your app source code. But in this case we decided to have it in it's separate repo.
+      # Check out the Repeato test workspace
       - name: Checkout workspace repo
         uses: actions/checkout@v4
         with:
-          repository: pujasoni/test_cicd
-          path: tests
+          repository: repeato-qa/demo-workspace
+          path: workspace-tests
           clean: false
-
-      # We need Flutter to build the app
-      - name: Install Flutter
-        uses: subosito/flutter-action@v2
-        with:
-          channel: 'stable'
-      # Optional: Add the built apk to the build artifacts
-      - name: Upload APK
-        uses: actions/upload-artifact@v4
-        with:
-          name: release-apk
-          path: build/app/outputs/flutter-apk/app-x86_64-release.apk
-
-      # Optional: We also commit the built app to the repo. It's saving us some time because we can use the apk in other workflows directly.
-      - name: List APKs
-        run: ls -la build/app/outputs/flutter-apk/
-      
-      - name: Move APK to project root
-        run: mv build/app/outputs/flutter-apk/*.apk .
-
-      - name: Commit APK
-        uses: EndBug/add-and-commit@v9
-        with:
-          author_name: Github Action
-          author_email: stephan@repeato.app
-          message: 'Added APK'
-          add: '*.apk'
 
       # Enable KVM for hardware-accelerated Android emulation on Ubuntu
       - name: Enable KVM group perms
@@ -71,7 +42,7 @@ jobs:
           sudo udevadm trigger --name-match=kvm
           mkdir -p ~/.android/avd
 
-      # Finally: Start emulator, install the app and run the tests via npx @repeato/cli-testrunner
+      # Start emulator and run the tests via npx @repeato/cli-testrunner
       - name: run tests
         uses: reactivecircus/android-emulator-runner@d7b53ddc6e44254e1f4cf4a6ad67345837027a66
         env:
@@ -95,15 +66,3 @@ jobs:
         with:
           name: batch-report
           path: batch-report/
-
-      # Optional: Upload the reports to some bucket so a link to the batch run report can be easily shared
-      # For AWS S3 You must enable enable ACLs object writing for bucket.
-      # Don't put your access keys in here. Use Github secrets for storing & accessing the keys.
-      # You might want to use 'if: always()' in this step and following ones, so the report is also uploaded if your test batch run failed.
-#      - name: Upload report to S3
-#        uses: shallwefootball/s3-upload-action@master
-#        with:
-#          aws_key_id: $AWS_ACCESS_KEY
-#          aws_secret_access_key: $AWS_ACCESS_SECRET_KEY
-#          aws_bucket: $AWS_BUCKET
-#          source_dir: batch-report
