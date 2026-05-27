@@ -1,0 +1,20 @@
+{
+    "id": "489b8f3d-9a00-c745-b181-056cb93583a8",
+    "date": 1777887505384,
+    "completed": true,
+    "stepResults": [],
+    "devices": [
+        {
+            "os": "iOS",
+            "osVersion": "15.5",
+            "size": "750x1334",
+            "serial": "0D6730F1-6F13-4F55-AD7E-0F4567E31B4F",
+            "deviceId": "0D6730F1-6F13-4F55-AD7E-0F4567E31B4F",
+            "name": "iPhone 8",
+            "isSimulator": true
+        }
+    ],
+    "duration": 11,
+    "appVersions": [],
+    "wasSuccessful": false
+}

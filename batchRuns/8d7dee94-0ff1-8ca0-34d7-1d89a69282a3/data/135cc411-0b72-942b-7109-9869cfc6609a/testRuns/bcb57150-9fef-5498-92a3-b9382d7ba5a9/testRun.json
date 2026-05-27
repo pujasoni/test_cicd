@@ -1,0 +1,319 @@
+{
+    "id": "bcb57150-9fef-5498-92a3-b9382d7ba5a9",
+    "date": 1776859761303,
+    "completed": true,
+    "stepResults": [
+        {
+            "id": "fb88955a-d5a6-c29f-c99e-5e07610e3755",
+            "step": "22c9c53b-25e2-682e-9922-e41050676c0e",
+            "matches": [],
+            "scaleFactor": 1,
+            "success": true,
+            "message": "",
+            "screenshot": "561d6dd4-e37b-5ea1-f689-eac743832c86-screenshot.jpg",
+            "createdOn": 1776859767089,
+            "executedOn": "Chrome Portrait"
+        },
+        {
+            "id": "52d775e1-95ca-967c-5c16-8c5c4de5af58",
+            "step": "5f52bd10-a827-3580-9589-569192936d2b",
+            "matches": [
+                {
+                    "position": {
+                        "x": 0.4,
+                        "y": 0.4
+                    },
+                    "size": {
+                        "width": 0.2,
+                        "height": 0.1
+                    },
+                    "probability": 1,
+                    "text": "08"
+                }
+            ],
+            "scaleFactor": 1,
+            "success": true,
+            "message": "Text found in region: \"08\"",
+            "scannedText": "08",
+            "screenshot": "3a8ffe86-f41c-f2d7-0a46-791458352d56-screenshot.jpg",
+            "createdOn": 1776859768293,
+            "executedOn": "Chrome Portrait"
+        },
+        {
+            "id": "25b9eca1-b0d8-369a-7d4e-7dbd7fb562bc",
+            "step": "5d3237b8-d01b-9834-46b6-acecabff4d75",
+            "matches": [
+                {
+                    "position": {
+                        "x": 0.4,
+                        "y": 0.4
+                    },
+                    "size": {
+                        "width": 0.2,
+                        "height": 0.1
+                    },
+                    "probability": 1,
+                    "text": "08"
+                }
+            ],
+            "scaleFactor": 1,
+            "success": true,
+            "message": "Text found in region: \"08\"",
+            "scannedText": "08",
+            "screenshot": "244ab911-2a98-9faa-8797-9ac83078a5ce-screenshot.jpg",
+            "createdOn": 1776859772702,
+            "executedOn": "Chrome Portrait"
+        },
+        {
+            "id": "cdd29915-ea5a-07a2-7c4f-e8039f9913c5",
+            "step": "07b76eba-9dcc-5be8-aa61-a7ba3bf85dab",
+            "matches": [
+                {
+                    "position": {
+                        "x": 0.3884169884169884,
+                        "y": 0.21995661605206074
+                    },
+                    "size": {
+                        "width": 0.2,
+                        "height": 0.1
+                    },
+                    "probability": 1,
+                    "text": "April2026"
+                }
+            ],
+            "scaleFactor": 1,
+            "success": true,
+            "message": "Text found in region: \"April2026\"",
+            "scannedText": "April2026",
+            "screenshot": "868bb9b4-6e32-478a-1cf0-295667fdc9f2-screenshot.jpg",
+            "createdOn": 1776859773666,
+            "executedOn": "Chrome Portrait"
+        },
+        {
+            "id": "2dfb4374-c792-8ad9-9976-197009d7079a",
+            "step": "51ef8214-ed00-2e48-9feb-48cd07ed3860",
+            "matches": [
+                {
+                    "position": {
+                        "x": 0.3884169884169884,
+                        "y": 0.21995661605206074
+                    },
+                    "size": {
+                        "width": 0.2,
+                        "height": 0.1
+                    },
+                    "probability": 1,
+                    "text": "April 2026"
+                }
+            ],
+            "scaleFactor": 1,
+            "success": true,
+            "message": "Text found in region: \"April 2026\"",
+            "scannedText": "April 2026",
+            "screenshot": "1a921d35-f14d-173b-3659-44e04a4b87e2-screenshot.jpg",
+            "createdOn": 1776859774770,
+            "executedOn": "Chrome Portrait"
+        },
+        {
+            "id": "de657085-ae11-3a4f-bb65-9063acc68d13",
+            "step": "4a32cfa3-df77-387e-abbb-8dc58481afe7",
+            "matches": [
+                {
+                    "position": {
+                        "x": 0.12200772200772199,
+                        "y": 0.24598698481561815
+                    },
+                    "size": {
+                        "width": 0.7277777777777777,
+                        "height": 0.390625
+                    },
+                    "probability": 1,
+                    "text": "April2026\nMo Tu We Th Fr\n01 02 03\n06 07 08 09 10\n13 14 15 16 17\n20 21 22 23 24"
+                }
+            ],
+            "scaleFactor": 1,
+            "success": true,
+            "message": "Scanned text: \"April2026\nMo Tu We Th Fr\n01 02 03\n06 07 08 09 10\n13 14 15 16 17\n20 21 22 23 24\"",
+            "scannedText": "April2026\nMo Tu We Th Fr\n01 02 03\n06 07 08 09 10\n13 14 15 16 17\n20 21 22 23 24",
+            "screenshot": "10611b84-527a-8d1d-510e-58ea54d8e245-screenshot.jpg",
+            "createdOn": 1776859776181,
+            "executedOn": "Chrome Portrait"
+        },
+        {
+            "id": "1516ec3c-982a-d8d6-4d7c-f82639e32191",
+            "step": "a419dd1d-a522-2aea-4d0e-f2e83344cf09",
+            "matches": [],
+            "scaleFactor": 1,
+            "success": true,
+            "message": "",
+            "screenshot": "1a5ec416-6f89-26a3-e5d2-03f529d21c4f-screenshot.jpg",
+            "createdOn": 1776859776223,
+            "executedOn": "Chrome Portrait"
+        },
+        {
+            "id": "43c36ac5-c6e2-3993-a439-061b248cb269",
+            "step": "531790da-4647-da40-c174-d8eb2adb569e",
+            "matches": [
+                {
+                    "position": {
+                        "x": 0.4875,
+                        "y": 0.1046875
+                    },
+                    "size": {
+                        "width": 0.17083333333333334,
+                        "height": 0.040625
+                    },
+                    "probability": 0.9012820323308309,
+                    "text": "Log in"
+                }
+            ],
+            "scaleFactor": 1,
+            "success": true,
+            "message": "Text found in region: \"Log in\"",
+            "scannedText": "Image2/9\nLog in",
+            "screenshot": "5c324d24-0145-d294-1384-958249658d09-screenshot.jpg",
+            "createdOn": 1776859779071,
+            "executedOn": "Chrome Portrait"
+        },
+        {
+            "id": "12070122-3ac1-570f-0720-bed68a0a6efc",
+            "step": "9a192219-d412-c86c-d0eb-1f8e62992faa",
+            "matches": [
+                {
+                    "position": {
+                        "x": 0.44722222222222224,
+                        "y": 0.76875
+                    },
+                    "size": {
+                        "width": 0.1111111111111111,
+                        "height": 0.025
+                    },
+                    "probability": 0.9984789013862609,
+                    "text": "LOGIN"
+                }
+            ],
+            "scaleFactor": 1,
+            "success": true,
+            "message": "Text found in region: \"LOGIN\"",
+            "scannedText": "Image3/9\n9:53\nRepeatoDemo App\nSecure sign in\nEmail *\nPassword*\nLOGIN",
+            "screenshot": "79a30458-c5cd-c6e2-b41a-c569e5164368-screenshot.jpg",
+            "createdOn": 1776859780581,
+            "executedOn": "Chrome Portrait"
+        },
+        {
+            "id": "d4910b96-1974-39a6-4fea-342f9c8d1aab",
+            "step": "36584496-674d-37fd-ba19-dd202e24fe91",
+            "matches": [
+                {
+                    "position": {
+                        "x": 0.10555555555555556,
+                        "y": 0.125
+                    },
+                    "size": {
+                        "width": 0.5694444444444444,
+                        "height": 0.0609375
+                    },
+                    "probability": 0.9952577948570251,
+                    "text": "Favorites"
+                }
+            ],
+            "scaleFactor": 1,
+            "success": true,
+            "message": "Text found in region: \"Favorites\"",
+            "scannedText": "Favorites",
+            "screenshot": "1d5dd727-f39d-ffc9-0159-ff6341c3f917-screenshot.jpg",
+            "createdOn": 1776859781818,
+            "executedOn": "Chrome Portrait"
+        },
+        {
+            "id": "fcab8103-5d0f-1255-5ae7-0485b71ccc39",
+            "step": "4aba30f6-aac1-63b1-9ea7-3f59b2eb5232",
+            "matches": [
+                {
+                    "position": {
+                        "x": 0.44166666666666665,
+                        "y": 0.84140625
+                    },
+                    "size": {
+                        "width": 0.11805555555555555,
+                        "height": 0.02421875
+                    },
+                    "probability": 0.9516892007419041,
+                    "text": "Sign in"
+                }
+            ],
+            "scaleFactor": 1,
+            "success": true,
+            "message": "Text found in region: \"Sign in\"",
+            "scannedText": "Image7/9\n12:05\nGoogl e\nSearch or type URL\nDemo App 10.0.2.2 Facebook YouTube Sanoo\nDiscover\nGetbetter content\ntoget contentbased onyour interests\nSign in\nHegsethLikensEaster\nRescue ofU.S.Airman",
+            "screenshot": "951c4fa4-a966-ca92-aa1a-a261b0d6d222-screenshot.jpg",
+            "createdOn": 1776859787810,
+            "executedOn": "Chrome Portrait"
+        },
+        {
+            "id": "134b63ca-84d7-6a1b-8f2d-baddb68ec38e",
+            "step": "24daeb87-d19d-7c8d-3803-25a341675d7e",
+            "matches": [],
+            "scaleFactor": 1,
+            "success": true,
+            "message": "",
+            "screenshot": "5bc08137-6c75-18ce-0031-3954f72d5adc-screenshot.jpg",
+            "createdOn": 1776859787830,
+            "executedOn": "Chrome Portrait"
+        },
+        {
+            "id": "ab44b07c-4a68-9513-ad37-5ac1cbcb8ed1",
+            "step": "02e64613-f169-1cde-c9b6-daed498c8248",
+            "matches": [
+                {
+                    "position": {
+                        "x": 0.12200772200772199,
+                        "y": 0.24598698481561815
+                    },
+                    "size": {
+                        "width": 0.7277777777777777,
+                        "height": 0.390625
+                    },
+                    "probability": 1,
+                    "text": "Victor Nguyen"
+                }
+            ],
+            "scaleFactor": 1,
+            "success": true,
+            "message": "Scanned text: \"Victor Nguyen\"",
+            "scannedText": "Victor Nguyen",
+            "screenshot": "e2e54d5b-8bfd-1225-3bc5-7ab55415b0f9-screenshot.jpg",
+            "createdOn": 1776859795926,
+            "executedOn": "Chrome Portrait"
+        },
+        {
+            "id": "63827e92-fc7a-63cd-f5c4-e4b00df10538",
+            "step": "e69cd75f-9071-f7f0-4037-659b55a15b0e",
+            "matches": [],
+            "scaleFactor": 1,
+            "success": true,
+            "message": "",
+            "screenshot": "f179d092-f8a6-8b0b-b72d-e281a9ac0e5a-screenshot.jpg",
+            "createdOn": 1776859795951,
+            "executedOn": "Chrome Portrait"
+        }
+    ],
+    "devices": [
+        {
+            "cloudProvider": "rpto",
+            "platform": "Web",
+            "os": "macOS",
+            "size": "720x1280",
+            "serial": "97e887d2-0e75-827f-4d07-94c2913e74b8",
+            "deviceId": "97e887d2-0e75-827f-4d07-94c2913e74b8",
+            "name": "Chrome Portrait",
+            "model": "Chrome",
+            "currentRotation": 0,
+            "isSimulator": false,
+            "lastConnectedBundle": "app://69e8b8e15538b2d07b1b8021"
+        }
+    ],
+    "duration": 34679,
+    "appVersions": [],
+    "wasSuccessful": true
+}

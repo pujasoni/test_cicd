@@ -1,0 +1,1 @@
+//!deviceData ? false : isLandscape // in case of switch step we might not have deviceData if device was not attached then assume false

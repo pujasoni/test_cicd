@@ -1,0 +1,24 @@
+{
+    "id": "73be50ae-71ef-ae69-4f76-b6eb6fc8dfdf",
+    "date": 1777887669369,
+    "completed": true,
+    "stepResults": [],
+    "devices": [
+        {
+            "cloudProvider": "rpto",
+            "platform": "Web",
+            "os": "macOS",
+            "size": "720x1280",
+            "serial": "97e887d2-0e75-827f-4d07-94c2913e74b8",
+            "deviceId": "97e887d2-0e75-827f-4d07-94c2913e74b8",
+            "name": "Chrome Portrait",
+            "model": "Chrome",
+            "currentRotation": 0,
+            "isSimulator": false,
+            "lastConnectedBundle": "app://69e8b8e15538b2d07b1b8021"
+        }
+    ],
+    "duration": 16645,
+    "appVersions": [],
+    "wasSuccessful": false
+}

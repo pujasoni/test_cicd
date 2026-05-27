@@ -1,0 +1,47 @@
+{
+    "version": 11,
+    "id": "a0745507-e7ba-76fd-0169-3e5871ff835c",
+    "title": "Quick dummy OCR test",
+    "description": "",
+    "libraryFolder": null,
+    "steps": [
+        {
+            "id": "23108f93-d314-48c9-4a56-46a7262720a5",
+            "originalFrame": "7ab27acc-306e-f3e9-3151-efbdfad8c687_frame.jpg",
+            "type": "scanTextAssertion",
+            "optional": false,
+            "createdOn": 1777535819651,
+            "recordedOn": "Dummy Device",
+            "region": {
+                "x": 0.4,
+                "y": 0.4,
+                "width": 0.2,
+                "height": 0.1
+            },
+            "matchIndex": 0,
+            "variableName": "scannedText",
+            "ocrLanguage": "eng",
+            "ocrMethod": "RepeatoOcr15",
+            "searchText": "08",
+            "operator": "contains"
+        }
+    ],
+    "devices": [
+        {
+            "platform": "Mobile",
+            "os": "Android",
+            "size": "447x719",
+            "deviceId": "dummy-device",
+            "name": "Dummy Device",
+            "model": "dummy-model",
+            "currentRotation": 0,
+            "isSimulator": true
+        }
+    ],
+    "createdOn": 1777535807533,
+    "changedOn": 1777535837033,
+    "isWorkingCopy": false,
+    "testRunExports": [],
+    "externalStepsNeedOverride": [],
+    "removeStepsFromSameStepGroups": []
+}

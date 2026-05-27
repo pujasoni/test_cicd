@@ -1,0 +1,62 @@
+{
+  "id": "ca945b56-26cb-e588-930c-24ee7bdaaafd",
+  "title": "",
+  "version": 15,
+  "testBatches": [
+    {
+      "id": "0",
+      "title": "Default Test Batch",
+      "tests": [
+        "135cc411-0b72-942b-7109-9869cfc6609a",
+        "135cc411-0b72-942b-7109-9869cfc6609a",
+        "135cc411-0b72-942b-7109-9869cfc6609a",
+        "135cc411-0b72-942b-7109-9869cfc6609a",
+        "135cc411-0b72-942b-7109-9869cfc6609a",
+        "135cc411-0b72-942b-7109-9869cfc6609a",
+        "135cc411-0b72-942b-7109-9869cfc6609a",
+        "135cc411-0b72-942b-7109-9869cfc6609a",
+        "135cc411-0b72-942b-7109-9869cfc6609a",
+        "135cc411-0b72-942b-7109-9869cfc6609a",
+        "135cc411-0b72-942b-7109-9869cfc6609a",
+        "135cc411-0b72-942b-7109-9869cfc6609a",
+        "135cc411-0b72-942b-7109-9869cfc6609a",
+        "135cc411-0b72-942b-7109-9869cfc6609a"
+      ],
+      "exceptionHandlers": []
+    }
+  ],
+  "folders": {
+    "id": "ROOT_TREE_NODE_ID",
+    "title": "All tests",
+    "expanded": true,
+    "children": [
+      {
+        "id": "default-node",
+        "title": "Recorded tests",
+        "expanded": true,
+        "children": [
+          "135cc411-0b72-942b-7109-9869cfc6609a",
+          "a0745507-e7ba-76fd-0169-3e5871ff835c"
+        ]
+      }
+    ]
+  },
+  "schedules": [],
+  "advancedConfig": "",
+  "tags": [
+    {
+      "name": "repeato-ocr",
+      "color": "#58A289"
+    },
+    {
+      "name": "ai-ocr",
+      "color": "#E5A09B"
+    },
+    {
+      "name": "tesseract",
+      "color": "#E9E7DD"
+    }
+  ],
+  "sameStepGroups": [],
+  "createdBy": "6425330ac3fe9d792df6d12e"
+}

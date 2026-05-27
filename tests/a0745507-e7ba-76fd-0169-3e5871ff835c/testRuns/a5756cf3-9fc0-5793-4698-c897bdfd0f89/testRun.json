@@ -1,0 +1,30 @@
+{
+    "id": "a5756cf3-9fc0-5793-4698-c897bdfd0f89",
+    "date": 1777535826879,
+    "completed": true,
+    "stepResults": [
+        {
+            "id": "b8382aea-aeab-3cda-a410-3999431ad60d",
+            "step": "23108f93-d314-48c9-4a56-46a7262720a5",
+            "matches": [],
+            "scaleFactor": 1,
+            "success": false,
+            "message": "Error occured while executing step: Error occured during Repeato OCR 1.5: Failed to resolve module specifier \"onnxruntime-web/webgpu\". Relative references must start with either \"/\", \"./\", or \"../\". Try launching Repeato with --ocr-provider=cpu to force the previous CPU path.",
+            "screenshot": "f4197084-2742-a20b-a03e-b36d1a8e7060-screenshot.jpg",
+            "createdOn": 1777535827769,
+            "executedOn": ""
+        }
+    ],
+    "devices": [],
+    "duration": 895,
+    "appVersions": [
+        {
+            "packageName": "app.repeato.dummyapp",
+            "appName": "Dummy App",
+            "executableName": "DummyApp",
+            "name": "1.0",
+            "code": "1"
+        }
+    ],
+    "wasSuccessful": false
+}

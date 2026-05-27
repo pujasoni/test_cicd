@@ -1,0 +1,324 @@
+{
+    "version": 11,
+    "id": "135cc411-0b72-942b-7109-9869cfc6609a",
+    "title": "OCR Web Test",
+    "description": "",
+    "libraryFolder": null,
+    "steps": [
+        {
+            "id": "22c9c53b-25e2-682e-9922-e41050676c0e",
+            "type": "startApp",
+            "optional": false,
+            "createdOn": 1776675587997,
+            "recordedOn": "Chrome Portrait",
+            "packageName": "",
+            "activityName": "",
+            "deleteAppData": true,
+            "grantPermissions": [
+                "all"
+            ],
+            "allPermissions": [],
+            "grantIosPermissions": [],
+            "allIosPermissions": [],
+            "os": "Android",
+            "websiteUrl": "https://repeato.app/temp/test-ocr/",
+            "browserLanguage": "en",
+            "params": "",
+            "iosParams": ""
+        },
+        {
+            "id": "5f52bd10-a827-3580-9589-569192936d2b",
+            "originalFrame": "4de1f0bb-4173-5938-dd56-8069acaa958a_frame.jpg",
+            "type": "scanTextAssertion",
+            "optional": false,
+            "createdOn": 1776762823960,
+            "recordedOn": "Chrome Portrait",
+            "tags": [
+                "repeato-ocr"
+            ],
+            "region": {
+                "x": 0.4,
+                "y": 0.4,
+                "width": 0.2,
+                "height": 0.1
+            },
+            "matchIndex": 0,
+            "variableName": "scannedText",
+            "ocrLanguage": "eng",
+            "ocrMethod": "RepeatoOcr15",
+            "searchText": "08",
+            "operator": "contains"
+        },
+        {
+            "id": "5d3237b8-d01b-9834-46b6-acecabff4d75",
+            "originalFrame": "71b36039-a59c-c67f-d54d-fd3bcea19099_frame.jpg",
+            "type": "scanTextAssertion",
+            "optional": false,
+            "createdOn": 1776762853755,
+            "recordedOn": "Chrome Portrait",
+            "tags": [
+                "ai-ocr"
+            ],
+            "region": {
+                "x": 0.4,
+                "y": 0.4,
+                "width": 0.2,
+                "height": 0.1
+            },
+            "matchIndex": 0,
+            "variableName": "scannedText",
+            "ocrLanguage": "eng",
+            "ocrMethod": "AI",
+            "searchText": "08",
+            "operator": "contains"
+        },
+        {
+            "id": "07b76eba-9dcc-5be8-aa61-a7ba3bf85dab",
+            "originalFrame": "fa5b2bc4-bbd6-6e44-31e1-798ba6d0f309_frame.jpg",
+            "type": "scanTextAssertion",
+            "optional": false,
+            "createdOn": 1776762871715,
+            "recordedOn": "Chrome Portrait",
+            "tags": [
+                "repeato-ocr"
+            ],
+            "region": {
+                "x": 0.3884169884169884,
+                "y": 0.21995661605206074,
+                "width": 0.2,
+                "height": 0.1
+            },
+            "matchIndex": 0,
+            "variableName": "scannedText",
+            "ocrLanguage": "eng",
+            "ocrMethod": "RepeatoOcr15",
+            "searchText": "April",
+            "operator": "contains"
+        },
+        {
+            "id": "51ef8214-ed00-2e48-9feb-48cd07ed3860",
+            "originalFrame": "936cb644-2404-9164-8a08-b5cbdd7c38ad_frame.jpg",
+            "type": "scanTextAssertion",
+            "optional": false,
+            "createdOn": 1776852454357,
+            "recordedOn": "Chrome Portrait",
+            "tags": [
+                "tesseract"
+            ],
+            "region": {
+                "x": 0.3884169884169884,
+                "y": 0.21995661605206074,
+                "width": 0.2,
+                "height": 0.1
+            },
+            "matchIndex": 0,
+            "variableName": "scannedText",
+            "ocrLanguage": "eng",
+            "ocrMethod": "Tesseract",
+            "searchText": "April",
+            "operator": "contains"
+        },
+        {
+            "id": "4a32cfa3-df77-387e-abbb-8dc58481afe7",
+            "originalFrame": "565d50bb-b404-3290-f027-4d67ede7ec58_frame.jpg",
+            "type": "ocr",
+            "optional": false,
+            "createdOn": 1776763004792,
+            "recordedOn": "Chrome Portrait",
+            "tags": [
+                "repeato-ocr"
+            ],
+            "region": {
+                "x": 0.12200772200772199,
+                "y": 0.24598698481561818,
+                "width": 0.7289575289575291,
+                "height": 0.39067245119305855
+            },
+            "matchIndex": 0,
+            "variableName": "scannedText",
+            "ocrLanguage": "eng",
+            "ocrMethod": "RepeatoOcr15"
+        },
+        {
+            "id": "a419dd1d-a522-2aea-4d0e-f2e83344cf09",
+            "type": "execScript",
+            "optional": false,
+            "createdOn": 1776763028196,
+            "recordedOn": "Chrome Portrait",
+            "directory": "",
+            "script": "if(!data.scannedText.includes('April')){\n    throw new Error(\"OCR failed, April not found!\")\n}",
+            "isExpanded": true,
+            "language": "js"
+        },
+        {
+            "id": "8838ae4c-c827-9e0c-b274-27b691e04ec9",
+            "originalFrame": "bc5abc0e-a829-4939-7f2c-f11f41410226_frame.jpg",
+            "timeout": 20,
+            "type": "scanTextClick",
+            "optional": false,
+            "createdOn": 1776675619891,
+            "recordedOn": "Chrome Portrait",
+            "matchIndex": 0,
+            "variableName": "scannedText",
+            "ocrLanguage": "eng",
+            "ocrMethod": "RepeatoOcr15",
+            "searchText": "12",
+            "operator": "contains",
+            "longClick": false
+        },
+        {
+            "id": "531790da-4647-da40-c174-d8eb2adb569e",
+            "originalFrame": "e668065b-fb95-8a85-dbaa-175d5bcc0cb2_frame.jpg",
+            "type": "scanTextClick",
+            "optional": false,
+            "createdOn": 1776758822029,
+            "recordedOn": "Chrome Portrait",
+            "matchIndex": 0,
+            "variableName": "scannedText",
+            "ocrLanguage": "eng",
+            "ocrMethod": "RepeatoOcr15",
+            "searchText": "Log in",
+            "operator": "contains",
+            "longClick": false
+        },
+        {
+            "id": "9a192219-d412-c86c-d0eb-1f8e62992faa",
+            "originalFrame": "55be7dc6-1728-dd1c-cc45-8058f805efe6_frame.jpg",
+            "type": "scanTextClick",
+            "optional": false,
+            "createdOn": 1776759187236,
+            "recordedOn": "Chrome Portrait",
+            "matchIndex": 0,
+            "variableName": "scannedText",
+            "ocrLanguage": "eng",
+            "ocrMethod": "RepeatoOcr15",
+            "searchText": "LOGIN",
+            "operator": "contains",
+            "longClick": false
+        },
+        {
+            "id": "36584496-674d-37fd-ba19-dd202e24fe91",
+            "originalFrame": "624938b7-d666-b28c-8545-ae3a62af58bb_frame.jpg",
+            "type": "scanTextClick",
+            "optional": false,
+            "createdOn": 1776759201981,
+            "recordedOn": "Chrome Portrait",
+            "matchIndex": 0,
+            "variableName": "scannedText",
+            "ocrLanguage": "eng",
+            "ocrMethod": "RepeatoOcr15",
+            "searchText": "Favorites",
+            "operator": "contains",
+            "longClick": false
+        },
+        {
+            "id": "692ce07e-fdb1-622e-2c96-9b479636f310",
+            "originalFrame": "95bcf015-0e81-374f-9d63-895f0a93b312_frame.jpg",
+            "timeout": 20,
+            "type": "scanTextClick",
+            "optional": false,
+            "createdOn": 1776759213325,
+            "recordedOn": "Chrome Portrait",
+            "matchIndex": 0,
+            "variableName": "scannedText",
+            "ocrLanguage": "eng",
+            "ocrMethod": "RepeatoOcr15",
+            "searchText": "positive text",
+            "operator": "contains",
+            "longClick": false
+        },
+        {
+            "id": "6b01c4b3-3a47-3532-3f10-b9405ccbb5b5",
+            "originalFrame": "02a47586-6d2c-b79b-e056-fbf726d3bad2_frame.jpg",
+            "timeout": 20,
+            "type": "scanTextClick",
+            "optional": false,
+            "createdOn": 1776759231444,
+            "recordedOn": "Chrome Portrait",
+            "matchIndex": 0,
+            "variableName": "scannedText",
+            "ocrLanguage": "eng",
+            "ocrMethod": "RepeatoOcr15",
+            "searchText": "Favorites",
+            "operator": "contains",
+            "longClick": false
+        },
+        {
+            "id": "4aba30f6-aac1-63b1-9ea7-3f59b2eb5232",
+            "originalFrame": "a99cf4f2-3818-6d10-1bbf-c611a91b46bd_frame.jpg",
+            "type": "scanTextClick",
+            "optional": false,
+            "createdOn": 1776759244164,
+            "recordedOn": "Chrome Portrait",
+            "matchIndex": 0,
+            "variableName": "scannedText",
+            "ocrLanguage": "eng",
+            "ocrMethod": "RepeatoOcr15",
+            "searchText": "Sign in",
+            "operator": "contains",
+            "longClick": false
+        },
+        {
+            "id": "24daeb87-d19d-7c8d-3803-25a341675d7e",
+            "type": "execScript",
+            "optional": false,
+            "createdOn": 1776764275751,
+            "recordedOn": "Chrome Portrait",
+            "directory": "",
+            "script": "data.aiSuccessCount = 0\ndata.loopCount = 0",
+            "isExpanded": true,
+            "language": "js"
+        },
+        {
+            "id": "02e64613-f169-1cde-c9b6-daed498c8248",
+            "originalFrame": "1a3ae647-5ff1-cc43-3aff-3b0a407ecf8a_frame.jpg",
+            "type": "ocr",
+            "optional": false,
+            "createdOn": 1776763429581,
+            "recordedOn": "Chrome Portrait",
+            "region": {
+                "x": 0.12200772200772199,
+                "y": 0.24598698481561818,
+                "width": 0.7289575289575291,
+                "height": 0.39067245119305855
+            },
+            "matchIndex": 0,
+            "variableName": "scannedText",
+            "ocrLanguage": "eng",
+            "ocrMethod": "AI",
+            "extractionPrompt": "The 3rd name in the list"
+        },
+        {
+            "id": "e69cd75f-9071-f7f0-4037-659b55a15b0e",
+            "type": "execScript",
+            "optional": false,
+            "createdOn": 1776763430090,
+            "recordedOn": "Chrome Portrait",
+            "directory": "",
+            "script": "if(!data.scannedText.includes('Victor')){\n    log(\"OCR failed. data.scannedText: \"+data.scannedText)\n} else if(data.scannedText.includes('Ethan')){\n    log(\"OCR failed, Extraction prompt didn't succeed: \"+data.scannedText)\n} else {\n    data.aiSuccessCount += 1\n}\n\ndata.loopCount += 1\n\nif(data.loopCount < 3){\n    testRunner.setNextStepId('02E646')\n} else {\n    log('Success rate: '+data.aiSuccessCount + ' of ' + data.loopCount + ' succeeded')\n}\n",
+            "isExpanded": true,
+            "language": "js"
+        }
+    ],
+    "devices": [
+        {
+            "cloudProvider": "rpto",
+            "platform": "Web",
+            "os": "macOS",
+            "size": "720x1280",
+            "serial": "97e887d2-0e75-827f-4d07-94c2913e74b8",
+            "deviceId": "97e887d2-0e75-827f-4d07-94c2913e74b8",
+            "name": "Chrome Portrait",
+            "model": "Chrome",
+            "currentRotation": 0,
+            "isSimulator": false,
+            "lastConnectedBundle": "app://69e8b8e15538b2d07b1b8021"
+        }
+    ],
+    "createdOn": 1776675583609,
+    "changedOn": 1777639905044,
+    "isWorkingCopy": false,
+    "testRunExports": [],
+    "externalStepsNeedOverride": [],
+    "removeStepsFromSameStepGroups": []
+}

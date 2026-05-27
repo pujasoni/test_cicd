@@ -1,0 +1,31 @@
+{
+    "id": "7f442cac-3adf-a3b0-48b9-4bcb97ae9851",
+    "date": 1777965211691,
+    "completed": true,
+    "stepResults": [
+        {
+            "id": "ccd3a8e2-1939-91d9-1c76-5af4a9afb5c2",
+            "step": "22c9c53b-25e2-682e-9922-e41050676c0e",
+            "matches": [],
+            "scaleFactor": 1,
+            "success": false,
+            "message": "iosBundleId is not set in appStartConfig",
+            "createdOn": 1777965211701,
+            "executedOn": "iPhone 8"
+        }
+    ],
+    "devices": [
+        {
+            "os": "iOS",
+            "osVersion": "15.5",
+            "size": "750x1334",
+            "serial": "0D6730F1-6F13-4F55-AD7E-0F4567E31B4F",
+            "deviceId": "0D6730F1-6F13-4F55-AD7E-0F4567E31B4F",
+            "name": "iPhone 8",
+            "isSimulator": true
+        }
+    ],
+    "duration": 14,
+    "appVersions": [],
+    "wasSuccessful": false
+}
