@@ -45,18 +45,21 @@ jobs:
       # Start emulator and run the tests via npx @repeato/cli-testrunner
       - name: run tests
         uses: reactivecircus/android-emulator-runner@d7b53ddc6e44254e1f4cf4a6ad67345837027a66
+        timeout-minutes: 20
         env:
           REPEATO_ACCESS_TOKEN: ${{ secrets.REPEATO_ACCESS_TOKEN }}
           ANDROID_AVD_HOME: /home/runner/.android/avd
         with:
           api-level: 29
           arch: x86_64
-          target: google_apis_playstore
+          target: google_apis
           profile: pixel_3a
           force-avd-creation: false
-          emulator-options: -no-snapshot-save -no-window -gpu swiftshader_indirect -noaudio -no-boot-anim -camera-back none
+          emulator-options: -no-snapshot-save -no-window -gpu swiftshader_indirect -noaudio -no-boot-anim -camera-back none -no-metrics
           disable-animations: true
           script: |
+            adb kill-server
+            adb start-server
             npx @repeato/cli-testrunner --workspaceDir "${GITHUB_WORKSPACE}/workspace-tests" --batchId 0 --accessToken "$REPEATO_ACCESS_TOKEN" --outputDir "${GITHUB_WORKSPACE}/batch-report"
 
       # Upload the batch test report (screenshots + results) even on failure, for debugging
