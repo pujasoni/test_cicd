@@ -32,8 +32,8 @@ jobs:
       - name: Checkout workspace repo
         uses: actions/checkout@v4
         with:
-          repository: repeato-qa/demo-workspace
-          path: workspace-tests
+          repository: pujasoni/test_cicd
+          path: tests
           clean: false
 
       # We need Flutter to build the app
